@@ -1,0 +1,52 @@
+Class First is annotated with @ClassDocumentation
+
+Class First has JavaDoc comment: 
+/**
+ * This is a class First.
+ * it contains methods
+ */
+
+
+Method First1 in class First is annotated with @MethodDocumentation
+
+Method First1 in class First has JavaDoc comment: 
+/**
+     * This is a method First1
+     * Inside First
+     */
+
+
+Method First2 in class First is annotated with @MethodDocumentation
+
+Method First2 in class First has JavaDoc comment: 
+/**
+     * This is a method First2
+     * Inside First
+     */
+
+
+Method First3 in class First is annotated with @MethodDocumentation
+
+Method First3 in class First has no JavaDoc comment
+
+Method First4 in class First is not annotated with @MethodDocumentation
+
+Method First4 in class First has JavaDoc comment: 
+/**
+     * This is a method First4
+     * Inside First
+     */
+
+
+Class Fourth is not annotated with @ClassDocumentation
+
+Class Fourth has no JavaDoc comment
+
+Class Second is not annotated with @ClassDocumentation
+
+Class Second has no JavaDoc comment
+
+Class Third is not annotated with @ClassDocumentation
+
+Class Third has no JavaDoc comment
+
