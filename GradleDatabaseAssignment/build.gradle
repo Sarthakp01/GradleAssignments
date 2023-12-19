@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.poi:poi:4.1.2'
+    implementation 'org.jfree:jfreechart:1.5.3'
+    implementation 'commons-dbcp:commons-dbcp:1.4'
+    implementation 'com.itextpdf:itext7-core:8.0.0'
+    implementation 'org.jfree:jfreechart:1.5.3'
+    implementation 'org.apache.commons:commons-dbcp2:2.9.0'
+//    implementation 'org.apache.poi:poi:4.1.2'
+//    implementation 'org.apache.poi:poi-ooxml:5.2.4'
+    implementation 'org.apache.poi:poi:5.0.0'
+    implementation 'org.apache.poi:poi-ooxml:5.0.0'
+//    implementation 'org.apache.logging.log4j:log4j-api:2.14.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.22.0'
+    implementation 'mysql:mysql-connector-java:8.0.23'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'
+//// https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+//    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.6.1'
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl
+//    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.1'
+
+
+//    implementation 'com.itextpdf:itextpdf:5.0.6'
+//    implementation 'org.apache.pdfbox:pdfbox:2.0.33'
+}
+
+application {
+    mainClassName = 'Main'
+}
+
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+}
